@@ -5,6 +5,27 @@
             --text-muted: rgba(255, 255, 255, 0.7);
         }
 
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        /* State when element comes into view */
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger Delays for items in a row (Cards, Grid Items, List Elements) */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+
         * {
             margin: 0;
             padding: 0;
@@ -143,6 +164,18 @@
             object-fit: contain;
             filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.25));
             pointer-events: none;
+        }
+
+        /* Clean, Zero-Collision Fade-In */
+        .subject-image {
+            opacity: 0;
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity;
+        }
+
+        /* Active State */
+        .subject-image.hero-active {
+            opacity: 1;
         }
 
         /* Content Layer */

@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="app.js"></script>
 </head>
 <body>
 
@@ -18,11 +19,11 @@
         <section class="hero-card">
             <!-- Header Navigation -->
             <nav class="navbar">
-                <div class="logo">Tito</div>
+                <div class="logo reveal">Tito</div>
                 <div class="nav-right">
                     <ul class="social-nav-links">
                         <!-- GitHub -->
-                        <li>
+                        <li class="card reveal delay-1">
                             <a href="https://github.com/buildwithtito" target="_blank" aria-label="GitHub">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
@@ -30,7 +31,7 @@
                             </a>
                         </li>
                         <!-- Twitter / X -->
-                        <li>
+                        <li class="card reveal delay-2">
                             <a href="https://x.com/buildwithtito" target="_blank" aria-label="Twitter">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -38,23 +39,28 @@
                             </a>
                         </li>
                         <!-- LinkedIn -->
-                        <li>
-                            <a href="www.linkedin.com/in/tito-tochukwu" target="_blank" aria-label="LinkedIn">
+                        <li class="card reveal delay-3">
+                            <a href="https://www.linkedin.com/in/tito-tochukwu" target="_blank" aria-label="LinkedIn">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.48 1.48 0 1 0 0 2.96 1.48 1.48 0 0 0 0-2.96z"/>
                                 </svg>
                             </a>
                         </li>
                         <!-- Instagram -->
-                        <li>
+                        <li class="card reveal delay-4">
                             <a href="https://www.instagram.com/buildwithtito/" target="_blank" aria-label="Instagram">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://calendly.com/treasureproxy/30min" target="_blank" class="card reveal delay-5" title="Calendly">
+                                <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                            </a>
+                        </li>
                     </ul>
-                    <a href="#contact" class="btn-primary">
+                    <a href="https://calendly.com/treasureproxy/30min" target="_blank" class="btn-primary">
                         Get in touch
                         <span class="arrow-icon">&#x2192;</span>
                     </a>
@@ -66,8 +72,8 @@
 
             <!-- Content Overlay -->
             <div class="hero-content">
-                <h1 class="headline">Web Dev &<br>Visionary</h1>
-                <div class="sub-copy">
+                <h1 class="headline reveal delay-2">Web Dev &<br>Visionary</h1>
+                <div class="sub-copy reveal delay-4">
                     <h3>Over 4yrs. I create websites that become legacies.</h3>
                     <p>If you believe in what you're building, then let's build it so that it lasts longer than you. </p>
                 </div>
@@ -75,19 +81,19 @@
 
             <!-- Numbered Services Grid -->
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item reveal delay-1">
                     <span class="service-number">01</span>
                     <span class="service-title">Landing Pages</span>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal delay-2">
                     <span class="service-number">02</span>
                     <span class="service-title">Static Websites</span>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal delay-3">
                     <span class="service-number">03</span>
                     <span class="service-title">Web Applications</span>
                 </div>
-                <div class="service-item">
+                <div class="service-item reveal delay-4">
                     <span class="service-number">04</span>
                     <span class="service-title">Creative Design</span>
                 </div>
@@ -96,10 +102,10 @@
 
         <!-- Tools Showcase Bar -->
         <section class="tools-showcase-bar">
-            <span class="tools-label">Technologies & Tools I Use</span>
+            <span class="tools-label reveal delay-3">Technologies & Tools I Use</span>
             <div class="tool-items">
                 <!-- HTML5 -->
-                <div class="tool-item">
+                <div class="tool-item reveal delay-1">
                     <svg class="tool-icon" viewBox="0 0 24 24">
                         <path d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.625h10.059l.236-2.625H5.432l.694 7.875h9.327l-.427 4.766-3.056.828-3.058-.828-.195-2.188H6.077l.389 4.36 5.504 1.516 5.508-1.516.762-8.563H8.531z"/>
                     </svg>
@@ -107,7 +113,7 @@
                 </div>
 
                 <!-- CSS3 -->
-                <div class="tool-item">
+                <div class="tool-item reveal delay-2">
                     <svg class="tool-icon" viewBox="0 0 24 24">
                         <path d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.625h10.059l.236-2.625H5.432l.694 7.875h9.327l-.427 4.766-3.056.828-3.058-.828-.195-2.188H6.077l.389 4.36 5.504 1.516 5.508-1.516.762-8.563H8.531z"/>
                     </svg>
@@ -115,7 +121,7 @@
                 </div>
 
                 <!-- JavaScript -->
-                <div class="tool-item">
+                <div class="tool-item reveal delay-3">
                     <svg class="tool-icon" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0V0z" fill="none"/>
                         <path d="M3 3h18v18H3V3zm10.72 14.5c.44.75 1.1 1.25 2.16 1.25 1.05 0 1.68-.52 1.68-1.25 0-.84-.66-1.16-1.78-1.65l-.61-.26c-1.75-.75-2.91-1.67-2.91-3.69 0-2.02 1.57-3.5 4.02-3.5 1.76 0 2.97.63 3.75 2.05l-1.87 1.2c-.44-.78-1.02-1.07-1.85-1.07-.87 0-1.44.47-1.44 1.1 0 .73.54 1.05 1.6 1.51l.61.26c2.05.88 3.12 1.83 3.12 3.84 0 2.37-1.84 3.72-4.48 3.72-2.52 0-3.99-1.12-4.75-2.58l1.75-1.25zm-6.26.15c.34.6.76.99 1.48.99.73 0 1.19-.34 1.19-1.63V8.67h2.47v8.83c0 2.59-1.52 3.75-3.66 3.75-1.95 0-3.13-.99-3.77-2.32l2.29-1.28z"/>
@@ -124,7 +130,7 @@
                 </div>
 
                 <!-- React -->
-                <div class="tool-item">
+                <div class="tool-item reveal delay-4">
                     <svg class="tool-icon" viewBox="0 0 24 24">
                         <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0-5c-4.8 0-9 1.79-9 4s4.2 4 9 4 9-1.79 9-4-4.2-4-9-4zm0 6c-3.66 0-7-1.18-7-2s3.34-2 7-2 7 1.18 7 2-3.34 2-7 2zm-6.36 8.64c-2.4 4.16-1.51 9.17.65 10.42 2.16 1.25 6.16-1.13 8.56-5.29s1.51-9.17-.65-10.42c-2.16-1.25-6.16 1.13-8.56 5.29zm1.73 1c1.83-3.17 4.79-5.11 6.32-4.23 1.53.88 1.19 4.31-.64 7.48s-4.79 5.11-6.32 4.23c-1.53-.88-1.19-4.31.64-7.48z"/>
                     </svg>
@@ -142,16 +148,16 @@
     <div class="about-layout">
         
         <!-- Left Side: Headline Anchor -->
-        <div class="about-left-col">
+        <div class="about-left-col reveal delay-2">
             <span class="about-index">01</span>
             <h2 class="about-title">Who is<br>Tito?</h2>
         </div>
 
         <!-- Right Side: Elevated Description -->
         <div class="about-right-col">
-            <span class="about-tag">MEET TITO</span>
-            <div class="about-role">FOUNDER &amp; Web dev</div>
-            <p class="about-description">
+            <span class="about-tag reveal delay-3">MEET TITO</span>
+            <div class="about-role reveal delay-4">FOUNDER &amp; Web dev</div>
+            <p class="about-description reveal delay-4">
                 Leads the studio's creative vision with a focus on high-impact visual systems, digital harmony, and modern brand storytelling. Transforming strategic intent into unforgettable online identities.
             </p>
         </div>
@@ -159,30 +165,30 @@
     </div>
 
     <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-number">99<span>%</span></div>
+        <div class="stat-item reveal delay-1">
+            <div class="stat-number ">97<span>%</span></div>
             <span class="stat-label">Client Satisfaction</span>
         </div>
 
-        <div class="stat-item">
-            <div class="stat-number">40<span>+</span></div>
-            <span class="stat-label">Projects Delivered</span>
+        <div class="stat-item reveal delay-2">
+            <div class="stat-number">10<span>+</span></div>
+            <span class="stat-label">Days Turnaround</span>
         </div>
 
-        <div class="stat-item">
+        <div class="stat-item reveal delay-3">
             <div class="stat-number">4<span>+</span></div>
             <span class="stat-label">Years of Experience</span>
         </div>
 
-        <div class="stat-item">
-            <div class="stat-number">15<span>+</span></div>
-            <span class="stat-label">Brands Shaped</span>
+        <div class="stat-item reveal delay-4">
+            <div class="stat-number">100,000<span>+</span></div>
+            <span class="stat-label">Lines of Code</span>
         </div>
     </div>  
     </section>
     <!-- Portfolio Section -->
     <section class="projects-section">
-        <div class="projects-header">
+        <div class="projects-header reveal delay-2">
             <span class="projects-tag">SELECTED WORKS</span>
             <span class="scroll-hint">Scroll →</span>
         </div>
@@ -192,7 +198,7 @@
             
             <!-- Project 01 -->
             <a href="https://www.favourfredrick.com/" target="_blank">
-                <div class="project-card" style="--bg-image: url('Freddy.png');">
+                <div class="project-card reveal delay-1" style="--bg-image: url('Freddy.png');">
                     <div class="project-number">1</div>
                     <div class="project-details">
                         <div class="project-text-info">
@@ -209,7 +215,7 @@
 
             <!-- Project 02 -->
             <a href="https://www.theshapesagencyweb.com/" target="_blank">
-                <div class="project-card" style="--bg-image: url('tsa.png');">
+                <div class="project-card reveal delay-2" style="--bg-image: url('tsa.png');">
                     <div class="project-number">2</div>
                     <div class="project-details">
                         <div class="project-text-info">
@@ -225,44 +231,12 @@
             </a>
 
             <!-- Project 03 -->
-            <a href="" target="_blank">
-                <div class="project-card" style="--bg-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80');">
+            <a href="" target="">
+                <div class="project-card reveal delay-3" style="--bg-image: url('image.png');">
                     <div class="project-number">3</div>
                     <div class="project-details">
                         <div class="project-text-info">
                             <h3 class="project-title">In progress...</h3>
-                            <span class="project-category">E-commerce Website Design</span>
-                        </div>
-                        <svg class="project-arrow" viewBox="0 0 24 24">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-
-            <a href="" target="_blank">
-                <div class="project-card" style="--bg-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
-                    <div class="project-number">4</div>
-                    <div class="project-details">
-                        <div class="project-text-info">
-                            <h3 class="project-title">Tito</h3>
-                            <span class="project-category">Portfolio Website Design</span>
-                        </div>
-                        <svg class="project-arrow" viewBox="0 0 24 24">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-
-            <a href="" target="_blank">
-                <div class="project-card" style="--bg-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
-                    <div class="project-number">5</div>
-                    <div class="project-details">
-                        <div class="project-text-info">
-                            <h3 class="project-title">Still choosing...</h3>
                             <span class="project-category">Will be added soon</span>
                         </div>
                         <svg class="project-arrow" viewBox="0 0 24 24">
@@ -273,12 +247,44 @@
                 </div>
             </a>
 
-            <a href="" target="_blank">
-                <div class="project-card" style="--bg-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
+            <a href="" target="">
+                <div class="project-card reveal delay-4" style="--bg-image: url('image.png');">
+                    <div class="project-number">4</div>
+                    <div class="project-details">
+                        <div class="project-text-info">
+                            <h3 class="project-title">In progress...</h3>
+                            <span class="project-category">Will be added soon</span>
+                        </div>
+                        <svg class="project-arrow" viewBox="0 0 24 24">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" target="">
+                <div class="project-card reveal delay-5" style="--bg-image: url('image.png');">
+                    <div class="project-number">5</div>
+                    <div class="project-details">
+                        <div class="project-text-info">
+                            <h3 class="project-title">In progress...</h3>
+                            <span class="project-category">Will be added soon</span>
+                        </div>
+                        <svg class="project-arrow" viewBox="0 0 24 24">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" target="">
+                <div class="project-card reveal delay-5" style="--bg-image: url('image.png');">
                     <div class="project-number">6</div>
                     <div class="project-details">
                         <div class="project-text-info">
-                            <h3 class="project-title">Still choosing...</h3>
+                            <h3 class="project-title">In progress...</h3>
                             <span class="project-category">Will be added soon &amp; Design</span>
                         </div>
                         <svg class="project-arrow" viewBox="0 0 24 24">
@@ -294,8 +300,8 @@
     <!-- Reviews Section -->
     <section class="reviews-section">
         <div class="reviews-header">
-            <h2 class="reviews-title">Loved by Clients</h2>
-            <p class="reviews-subtitle">Real Stories, Real Impact - Hear from those whose brands I have helped shape.</p>
+            <h2 class="reviews-title reveal delay-1">Loved by Clients</h2>
+            <p class="reviews-subtitle reveal delay-2">Real Stories, Real Impact - Hear from those whose brands I have helped shape.</p>
         </div>
 
         <div class="marquee-container">
@@ -304,51 +310,51 @@
                 <!-- REVIEW CARD 1 -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-1">
+                            <img src="red-bg.png" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">Sarah Jenkins</span>
-                                <span class="client-location">Lagos, NG</span>
+                                <span class="client-name">Freddy</span>
+                                <span class="client-location">Youtube Editor</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        Tito transformed our brand identity into a luxury experience. His attention to detail, visual layout expertise, and seamless implementation were top tier.
+                        As a YouTube Editor, I reached out to Tito to build my professional portfolio website. He delivered a premium, fully polished website for me in a short time. It was more beautiful than I expected. The amount of detail he put into such a simple-looking website is worthy of every word of praise I receive from my clients till date.
                     </p>
                 </article>
 
                 <!-- REVIEW CARD 2 -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-2">
+                            <img src="amaka.jpg" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">David Chen</span>
-                                <span class="client-location">London, UK</span>
+                                <span class="client-name">Amaka Onwuama</span>
+                                <span class="client-location">CEO, Everglo.</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        The web application built for us surpassed all performance expectations. High design aesthetic coupled with clean responsive code made a massive impact.
+                        Working with Tito was a stress free experience. He's proactive and his thought process is human centered.
                     </p>
                 </article>
 
                 <!-- REVIEW CARD 3 -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-3">
+                            <img src="favicon-32x32.png``" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">Amara Okafor</span>
-                                <span class="client-location">New York, US</span>
+                                <span class="client-name">Ryan Favour</span>
+                                <span class="client-location">Web Developer</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        Working with Tito felt effortless. He balanced bold artistic direction with real conversion-focused design. Highly recommended for premium projects.
+                        "If there's a developer I can brag about its most definitely Tito. No bluff. His designs are top notch and unique. 10 out of 10 developer"
                     </p>
                 </article>
 
@@ -357,51 +363,51 @@
                 <!-- REVIEW CARD 1 (DUPLICATE) -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-4">
+                            <img src="red-bg.png" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">Sarah Jenkins</span>
-                                <span class="client-location">Lagos, NG</span>
+                                <span class="client-name">Freddy</span>
+                                <span class="client-location">YouTube Editor</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        Tito transformed our brand identity into a luxury experience. His attention to detail, visual layout expertise, and seamless implementation were top tier.
+                       As a YouTube Editor, I reached out to Tito to build my professional portfolio website. He delivered a premium, fully polished website for me in a short time. It was more beautiful than I expected. The amount of detail he put into such a simple-looking website is worthy of every word of praise I receive from my clients till date.
                     </p>
                 </article>
 
                 <!-- REVIEW CARD 2 (DUPLICATE) -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-5">
+                            <img src="amaka.jpg" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">David Chen</span>
-                                <span class="client-location">London, UK</span>
+                                <span class="client-name">Amaka Onwuama</span>
+                                <span class="client-location">CEO, Everglo.</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        The web application built for us surpassed all performance expectations. High design aesthetic coupled with clean responsive code made a massive impact.
+                        Working with Tito was a stress free experience. He's proactive and his thought process is human centered.
                     </p>
                 </article>
 
                 <!-- REVIEW CARD 3 (DUPLICATE) -->
                 <article class="review-card">
                     <div class="card-top">
-                        <div class="client-profile">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Client Avatar" class="client-avatar">
+                        <div class="client-profile reveal delay-5">
+                            <img src="favicon-32x32.png" alt="Client Avatar" class="client-avatar">
                             <div class="client-meta">
-                                <span class="client-name">Amara Okafor</span>
-                                <span class="client-location">New York, US</span>
+                                <span class="client-name">Ryan Favour</span>
+                                <span class="client-location">Web Developer</span>
                             </div>
                         </div>
                         <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                     <p class="review-text">
-                        Working with Tito felt effortless. He balanced bold artistic direction with real conversion-focused design. Highly recommended for premium projects.
+                        "If there's a developer I can brag about its most definitely Tito. No bluff. His designs are top notch and unique. 10 out of 10 developer"
                     </p>
                 </article>
 
@@ -414,13 +420,13 @@
         <div class="quote-container">
             <div class="quote-content">
                 <span class="quote-icon">&ldquo;</span>
-                <blockquote class="quote-text">
+                <blockquote class="quote-text reveal delay-4">
                     If money was not a problem, these are a few of the things that I'd spend my time doing.
                 </blockquote>
-                <span class="quote-author">Tito &mdash; Creative Director</span>
+                <span class="quote-author reveal delay-5">Tito &mdash; Creative Director</span>
             </div>
 
-            <div class="quote-image-wrapper">
+            <div class="quote-image-wrapper reveal delay-2">
                 <!-- Replace src with your attached blur-bg-talkking.JPG image path -->
                 <img src="blur-bg-talkking.JPG" alt="Tito Speaking" class="quote-img">
             </div>
@@ -431,7 +437,7 @@
 
             <!-- 1. Left -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-1">
                     <div class="item-icon">🕺</div>
                     <div class="item-details">
                         <h4>Dancing</h4>
@@ -442,7 +448,7 @@
 
             <!-- 2. Right -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-2">
                     <div class="item-icon">🥁</div>
                     <div class="item-details">
                         <h4>Playing Drums</h4>
@@ -453,7 +459,7 @@
 
             <!-- 3. Left -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-3">
                     <div class="item-icon">🎬</div>
                     <div class="item-details">
                         <h4>Cinematic Editing</h4>
@@ -464,7 +470,7 @@
 
             <!-- 4. Right -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">🎤</div>
                     <div class="item-details">
                         <h4>Public Speaking</h4>
@@ -475,7 +481,7 @@
 
             <!-- 5. Left -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">📚</div>
                     <div class="item-details">
                         <h4>Writing &amp; Philosophy</h4>
@@ -486,7 +492,7 @@
 
             <!-- 6. Right -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">🏎️</div>
                     <div class="item-details">
                         <h4>Conversations</h4>
@@ -497,7 +503,7 @@
 
             <!-- 7. Left -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">✈️</div>
                     <div class="item-details">
                         <h4>World Travel</h4>
@@ -508,7 +514,7 @@
 
             <!-- 8. Right -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">🎨</div>
                     <div class="item-details">
                         <h4>Creating</h4>
@@ -519,7 +525,7 @@
 
             <!-- 9. Left -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">🏛️</div>
                     <div class="item-details">
                         <h4>Teaching</h4>
@@ -530,7 +536,7 @@
 
             <!-- 10. Right -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card reveal delay-4">
                     <div class="item-icon">🌱</div>
                     <div class="item-details">
                         <h4>Building communities</h4>
@@ -547,57 +553,57 @@
         <div class="contact-container">
             
             <!-- Left Column: Cutout Image with Surrounding Orbit Icons -->
-            <div class="orbital-wrapper">
+            <div class="orbital-wrapper reveal delay-4">
                 <div class="orbital-glow"></div>
                 
                 <!-- Cutout Image (No Background) -->
-                <img src="no-bg-glasses.png" alt="Tito Cutout" class="contact-cutout">
+                <img src="no-bg-glasses.png" alt="Tito Cutout" class="contact-cutout reveal delay-4">
 
                 <!-- Surrounding Social Media Icons -->
-                <a href="https://calendly.com" target="_blank" class="orbit-icon icon-calendly" title="Calendly">
+                <a href="https://calendly.com/treasureproxy/30min" target="_blank" class="orbit-icon icon-calendly reveal delay-2" title="Calendly">
                     <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
                 </a>
 
-                <a href="https://www.instagram.com/buildwithtito" target="_blank" class="orbit-icon icon-instagram" title="Instagram">
+                <a href="https://www.instagram.com/buildwithtito" target="_blank" class="orbit-icon icon-instagram reveal delay-3" title="Instagram">
                     <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 </a>
 
-                <a href="https://x.com/buildwithtito" target="_blank" class="orbit-icon icon-x" title="X (Twitter)">
+                <a href="https://x.com/buildwithtito" target="_blank" class="orbit-icon icon-x reveal delay-4" title="X (Twitter)">
                     <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
 
-                <a href="www.linkedin.com/in/tito-tochukwu" target="_blank" class="orbit-icon icon-linkedin" title="LinkedIn">
+                <a href="www.linkedin.com/in/tito-tochukwu" target="_blank" class="orbit-icon icon-linkedin reveal delay-5" title="LinkedIn">
                     <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26z"/></svg>
                 </a>
 
-                <a href="https://github.com/buildwithtito" target="_blank" class="orbit-icon icon-github" title="GitHub">
+                <a href="https://github.com/buildwithtito" target="_blank" class="orbit-icon icon-github reveal delay-5" title="GitHub">
                     <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 </a>
 
-                <a href="mailto:buildwithtito@gmail.com" class="orbit-icon icon-email" title="Email">
+                <a href="mailto:buildwithtito@gmail.com" class="orbit-icon icon-email reveal delay-4" title="Email">
                     <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 </a>
             </div>
 
             <!-- Right Column: Form -->
             <div class="contact-form-wrapper">
-                <span class="contact-tag">GET IN TOUCH</span>
-                <h2 class="contact-title">Let's build something extraordinary.</h2>
+                <span class="contact-tag reveal delay-2">GET IN TOUCH</span>
+                <h2 class="contact-title reveal delay-3">Let's build something extraordinary.</h2>
 
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form reveal delay-4" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                        <input type="text" id="name" name="name" class="form-input reveal delay-1" placeholder="e.g. John Doe" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                        <input type="email" id="email" name="email" class="form-input reveal delay-2" placeholder="e.g. john@example.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+                        <textarea id="message" name="message" class="form-textarea reveal delay-3" placeholder="Tell me about your project..." required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">Send Message</button>
