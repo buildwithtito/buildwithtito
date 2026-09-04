@@ -33,6 +33,12 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
+        html, body {
+            max-width: 100vw;
+            overflow-x: hidden;
+            position: relative;
+        }
+
         body {
             background-color: #0d0d11;
             color: var(--text-white);
@@ -44,7 +50,6 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            overflow-x: hidden;
         }
 
         .hero-container {
@@ -208,7 +213,7 @@
         }
 
         .sub-copy h3 {
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 500;
             line-height: 1.3;
             margin-bottom: 12px;
@@ -1029,6 +1034,8 @@
     object-fit: contain;
     filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.8));
     margin-bottom: -10px;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 /* Orbiting Floating Social Icons */
@@ -1442,6 +1449,10 @@
         flex: 0 0 240px;
         height: 440px;
         padding: 24px 18px;
+    }
+
+    .project-card::before {
+        opacity: .5;
     }
 
     .project-number {
