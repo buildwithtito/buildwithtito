@@ -1127,51 +1127,8 @@
     line-height: 1.1;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--text-muted);
-}
-
-.form-input,
-.form-textarea {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
-    padding: 14px 18px;
-    font-size: 15px;
-    color: var(--text-white);
-    outline: none;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-    border-color: var(--accent-gold);
-}
-
-.form-textarea {
-    height: 120px;
-    resize: none;
-}
-
-.submit-btn {
+.call-btn, .email-btn{
     align-self: flex-start;
     background: var(--accent-gold);
     color: var(--bg-dark);
@@ -1187,7 +1144,13 @@
     margin-top: 10px;
 }
 
-.submit-btn:hover {
+.email-btn{
+    background: var(--bg-dark);
+    color: var(--accent-gold);
+    border: var(--accent-gold), 1px solid ;
+}
+
+.email-btn:hover, .call-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
 }
