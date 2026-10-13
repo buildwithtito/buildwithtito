@@ -522,6 +522,7 @@
             cursor: pointer;
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 50;
         }
 
         /* Hover Background Image Overlay */
@@ -1147,7 +1148,7 @@
 .email-btn{
     background: var(--bg-dark);
     color: var(--accent-gold);
-    border: var(--accent-gold), 1px solid ;
+    border: var(--accent-gold), 1px solid;
 }
 
 .email-btn:hover, .call-btn:hover {
