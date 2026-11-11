@@ -928,7 +928,7 @@
 /* Tablet & Mobile Breakpoints for Hero Section */
 @media (max-width: 900px) {
 
-    .btn-primary{
+   .hero-section .btn-primary{
         display: none;
     }
 
