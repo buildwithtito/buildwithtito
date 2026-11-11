@@ -20,6 +20,13 @@
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         .video-bg-container {
@@ -198,6 +205,7 @@
             padding-top: 10rem; /* Pulls text down slightly for perfect vertical balance */
             padding-left: 1.5rem; /* Adds safe distance from the cutout */
             padding-bottom: 6rem;
+            overflow: hidden;
         }
 
         .hero-right {
@@ -253,27 +261,6 @@
             max-width: 520px;
         }
 
-        /* Mobile Breakpoint */
-        @media (max-width: 968px) {
-            .navbar {
-                padding: 0 1.5rem;
-            }
-            .hero-section {
-                grid-template-columns: 1fr;
-                padding: 120px 1.5rem 2rem 1.5rem;
-                text-align: center;
-            }
-            .hero-left {
-                display: none; /* Clean collapse on mobile */
-            }
-            .hero-right {
-                align-items: center;
-            }
-            .headline {
-                font-size: 2.5rem;
-            }
-        }
-
         /* ==========================================
         VOICE NOTE WIDGET STYLING
         ========================================== */
@@ -281,7 +268,7 @@
             position: relative;
             z-index: 2;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 0;
             padding: 6rem 2rem;
         }
 
@@ -694,19 +681,6 @@
     grid-row: span 1;
 }
 
-/* Responsive adjustment for smaller screens */
-@media (max-width: 768px) {
-    .dm-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-    }
-    .dm-item.wide, .dm-item.large, .dm-item.tall {
-        grid-column: span 1;
-        grid-row: span 1;
-        height: 320px;
-    }
-}
-
 /* ==========================================
    STAIRCASE PROCESS & FOOTER STYLING
    ========================================== */
@@ -933,14 +907,6 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width: 640px) {
-    .staircase-wrapper {
-        grid-template-columns: 1fr;
-    }
-    .staircase-stage {
-        display: none; /* Simplifies layout on mobile phones */
-    }
-}
 
 .reveal {
     opacity: 0;
@@ -958,3 +924,73 @@
 .reveal.delay-1 { transition-delay: 0.1s; }
 .reveal.delay-2 { transition-delay: 0.2s; }
 .reveal.delay-3 { transition-delay: 0.3s; }
+
+/* Tablet & Mobile Breakpoints for Hero Section */
+@media (max-width: 900px) {
+
+    .btn-primary{
+        display: none;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr !important;
+        padding: 120px 1.5rem 2rem 1.5rem !important;
+        text-align: center;
+    }
+    
+    .hero-left {
+        display: none !important; /* Hides cutout on mobile to prevent overlap */
+    }
+
+    .hero-right-scroll-wrapper {
+        padding-left: 0 !important;
+        padding-top: 2rem !important;
+        gap: 3rem !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+     .staircase-stage {
+        display: none !important; /* Hides staircase graphic on smaller screens, leaving clean cards */
+    }
+
+    .portfolio-header,
+    .dm-header,
+    .how-header,
+    .staircase-header,
+    .voice-agitation-container,
+    .hero-right {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Ensure inner paragraphs and titles respect center alignment */
+    .portfolio-header p,
+    .dm-header p,
+    .how-header p,
+    .staircase-header p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .staircase-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .dm-grid {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: auto !important;
+    }
+
+    .dm-item, 
+    .dm-item.wide, 
+    .dm-item.large, 
+    .dm-item.tall {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        height: 300px !important;
+    }
+}
