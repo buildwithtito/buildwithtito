@@ -203,14 +203,13 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => observer.observe(card));
 });
 
+// SAFE MOBILE SCROLL-UP OBSERVER
 document.addEventListener('DOMContentLoaded', () => {
-    // Target your actual scrolling right column element
-    const scrollContainer = document.querySelector('.hero-right-scroll-wrapper') || null;
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal-up');
 
-    const revealObserverOptions = {
-        root: scrollContainer, // Sets the container as the scroll boundary
-        rootMargin: '0px 0px -50px 0px',
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -80px 0px',
         threshold: 0.1
     };
 
@@ -218,10 +217,10 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target);
+                observer.unobserve(entry.target); // Animate once and let it stay active
             }
         });
-    }, revealObserverOptions);
+    }, observerOptions);
 
     revealElements.forEach(el => revealObserver.observe(el));
 });
